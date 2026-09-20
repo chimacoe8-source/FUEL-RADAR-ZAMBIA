@@ -1,0 +1,19 @@
+body { margin:0; font-family: -apple-system, sans-serif; background:#f5f5f5; }
+header { background:#1a8c3a; color:white; padding:16px; text-align:center; }
+header h1 { margin:0; font-size:22px; }
+header p { margin:4px 0 0; opacity:0.9; font-size:14px; }
+#map { height:300px; width:100%; }
+.container { padding:12px; }
+.filters { display:flex; gap:8px; overflow-x:auto; margin-bottom:12px; }
+.filters button { padding:8px 14px; border:1px solid #ddd; border-radius:20px; background:white; white-space:nowrap; }
+.filters button.active { background:#1a8c3a; color:white; border-color:#1a8c3a; }
+.station-card { background:white; border-radius:12px; padding:12px; margin-bottom:10px; box-shadow:0 2px 6px rgba(0,0,0,0.07); }
+.station-card h3 { margin:0 0 4px; font-size:16px; }
+.station-card p { margin:2px 0; font-size:13px; color:#555; }
+.badge { display:inline-block; padding:3px 8px; border-radius:10px; font-size:11px; font-weight:bold; }
+.available { background:#d1fae5; color:#065f46; }
+.low { background:#fef3c7; color:#92400e; }
+.out { background:#fee2e2; color:#991b1b; }
+.add-report { background:white; border-radius:12px; padding:14px; margin-top:16px; }
+.add-report select, .add-report button { width:100%; padding:10px; margin-top:8px; border-radius:8px; border:1px solid #ddd; }
+.add-report button { background:#1a8c3a; color:white; border:none; font-weight:bold; }

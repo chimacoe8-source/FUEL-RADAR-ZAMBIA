@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel Radar Zambia</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+<header>
+  <h1>⛽ Fuel Radar Zambia</h1>
+  <p>Live fuel availability in Lusaka & Zambia</p>
+</header>
+
+<div id="map"></div>
+
+<div class="container">
+  <div class="filters">
+    <button class="active" onclick="filterFuel('all')">All</button>
+    <button onclick="filterFuel('available')">Available</button>
+    <button onclick="filterFuel('low')">Low</button>
+    <button onclick="filterFuel('out')">No Fuel</button>
+  </div>
+
+  <div id="station-list"></div>
+  
+  <div class="add-report">
+    <h3>Report Fuel Status</h3>
+    <select id="report-station"></select>
+    <select id="report-status">
+      <option value="available">✅ Available</option>
+      <option value="low">⚠️ Low / Queue</option>
+      <option value="out">❌ No Fuel</option>
+    </select>
+    <button onclick="submitReport()">Submit Report</button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
