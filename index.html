@@ -22,10 +22,10 @@
 
 <div class="container">
   <div class="filters">
-    <button class="active" onclick="filterFuel('all')">All</button>
-    <button onclick="filterFuel('available')">Available</button>
-    <button onclick="filterFuel('low')">Low</button>
-    <button onclick="filterFuel('out')">No Fuel</button>
+    <button class="active" onclick="filterFuel('all', this)">All</button>
+    <button onclick="filterFuel('available', this)">Available</button>
+    <button onclick="filterFuel('low', this)">Low</button>
+    <button onclick="filterFuel('out', this)">No Fuel</button>
   </div>
 
   <div id="station-list"></div>
